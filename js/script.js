@@ -76,7 +76,7 @@ formCotizacion.addEventListener("submit", async function (evento) {
                 <div class="mensaje-icono">✓</div>
                 <h3>¡Solicitud recibida!</h3>
                 <p>
-                    Gracias por confiar en TAUENIA.
+                    Gracias por confiar en TAIKENIA.
                     Revisaremos la información y nos pondremos en contacto contigo.
                 </p>
             </div>
