@@ -88,3 +88,12 @@ formCotizacion.addEventListener("submit", async function (evento) {
 
     }
 });
+
+// MENÚ MÓVIL
+
+const menuMovil = document.getElementById("menuMovil");
+const nav = document.querySelector("header nav");
+
+menuMovil.addEventListener("click", function () {
+    nav.classList.toggle("activo");
+});
