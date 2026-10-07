@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAIKENIA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <div class="logo">TAIKENIA</div>
+
+        <nav>
+    <a href="#inicio" id="navInicio">Inicio</a>
+    <a href="#nosotros" id="navNosotros">Nosotros</a>
+    <a href="#servicios" id="navServicios">Servicios</a>
+    <a href="#porque-elegirnos" id="navPorque">¿Por qué elegirnos?</a>
+    <a href="#contacto" id="navContacto">Contacto</a>
+</nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>Experiencias que <span>transforman.</span></h1>
+                <p>
+    Creamos experiencias que conectan a las personas,
+    fortalecen habilidades y convierten el aprendizaje
+    en algo que se vive.
+</p>
+
+                <a href="#nosotros" class="boton">Descubre TAIKENIA</a>
+            </div>
+        </section>
+
+                <section class="nosotros" id="nosotros">
+            <div class="nosotros-contenido">
+                <div class="nosotros-texto">
+                <span class="etiqueta">CONÓCENOS</span>
+
+                <h2>Experiencias que generan aprendizaje</h2>
+
+                <p>
+                    En TAIKENIA diseñamos experiencias lúdicas y participativas
+                    que buscan fortalecer habilidades, generar conexiones y
+                    transformar la manera en que las personas aprenden.
+                </p>
+
+                <p>
+                    Trabajamos en diferentes contextos donde el aprendizaje,
+                    la interacción y el trabajo en equipo son fundamentales.
+                </p>
+
+                </div>
+
+    <div class="nosotros-marca">
+
+    <img src="C:\Users\lopes\Desktop\EMPRENDIMIENTO\TAIKENIA_LOGO.png" alt="Logo TAIKENIA">
+
+</div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="servicios" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="servicios-contenedor">
+
+        <div class="servicio">
+            <span class="servicio-numero">01</span>
+            <h3>Experiencias lúdicas</h3>
+            <p>
+                Diseñamos actividades dinámicas que permiten aprender
+                de una manera diferente y participativa.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <span class="servicio-numero">02</span>
+            <h3>Trabajo en equipo</h3>
+            <p>
+                Creamos espacios que fortalecen la comunicación,
+                la colaboración y las relaciones interpersonales.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <span class="servicio-numero">03</span>
+            <h3>Desarrollo socioemocional</h3>
+            <p>
+                Generamos experiencias orientadas al desarrollo de
+                habilidades socioemocionales e inteligencia emocional.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="porque-elegirnos" id="porque-elegirnos">
+    <h2>¿Por qué elegirnos?</h2>
+
+    <div class="razones-contenedor">
+
+        <div class="razon">
+            <h3>Experiencias diferentes</h3>
+            <p>
+                Proponemos una forma diferente de aprender mediante
+                actividades dinámicas y participativas.
+            </p>
+        </div>
+
+        <div class="razon">
+            <h3>Trabajo en equipo</h3>
+            <p>
+                Fortalecemos la comunicación, la colaboración y las
+                relaciones entre las personas.
+            </p>
+        </div>
+
+        <div class="razon">
+            <h3>Aprendizaje significativo</h3>
+            <p>
+                Buscamos que cada experiencia genere aprendizajes que
+                puedan aplicarse en diferentes contextos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+
+    <div class="contacto-contenido">
+
+        <div class="contacto-texto">
+            <span class="etiqueta-contacto">HABLEMOS</span>
+
+            <h2>Hagamos que la experiencia suceda.</h2>
+
+            <p>
+                ¿Quieres conocer más sobre nuestras experiencias?
+                Estamos aquí para escucharte.
+            </p>
+
+            <div class="contacto-info">
+                <p><strong>Correo:</strong> contacto@taikenia.com</p>
+                <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+            </div>
+        </div>
+
+        <div class="cotizacion" id="abrirCotizacion">
+            <span>¿TIENES UNA IDEA?</span>
+
+            <h3>Solicita una cotización</h3>
+
+            <div class="cotizacion-flecha">↗</div>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal-cotizacion" id="modalCotizacion">
+
+    <div class="modal-contenido">
+
+        <button class="cerrar-modal" id="cerrarModal">&times;</button>
+
+        <span class="etiqueta-contacto">COTIZACIÓN</span>
+
+        <h2>Cuéntanos sobre tu experiencia</h2>
+
+        <form id="formCotizacion" action="https://formspree.io/f/xaenzrdv" method="POST">
+
+            <input type="text" name="nombre_empresa" placeholder="Nombre o empresa" required>
+
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+
+            <input type="text" name="tipo_experiencia" placeholder="Tipo de experiencia" required>
+
+            <div class="campo-slider">
+
+    <label for="participantesSlider">¿Cuántas personas participarán?</label>
+
+    <div class="slider-valor" id="participantesValor">20 personas</div>
+
+    <input
+        type="range"
+        id="participantesSlider"
+        name="participantes"
+        min="0"
+        max="500"
+        step="5"
+        value="20"
+        required
+    >
+</div>
+
+            <input type="date" name="fecha" required>
+
+            <input type="text" name="lugar" placeholder="Lugar de la actividad">
+
+            <div class="campo-slider">
+
+    <label for="presupuestoSlider">¿Qué presupuesto tienes disponible?</label>
+
+    <div class="slider-valor" id="presupuestoValor">$500.000 COP</div>
+
+    <input
+        type="range"
+        id="presupuestoSlider"
+        name="presupuesto"
+        min="100000"
+        max="5000000"
+        step="10000"
+        value="500000"
+    >
+</div>
+
+            <textarea name="necesidad" placeholder="Cuéntanos qué necesitas"></textarea>
+
+            <button type="submit">Solicitar cotización</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+    </main>
+
+<footer class="footer">
+    <p>© 2026 TAIKENIA. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
